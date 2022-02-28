@@ -1,0 +1,35 @@
+{%extends 'base.html'%}
+{%block body_block%}
+<h2 style="text-align:center;">add book</h2> <br>
+     <div class="row">
+         <div class="col-2">  </div>
+         <div class="col-8">
+             <form action="" method="post" enctype="multipart/form-data">
+                 {%csrf_token%}
+                 {{form.as_p}}
+                 <input type="submit" value="add" name="" id="">
+             </form>
+<!--             <form action="" method="post">-->
+<!--                 {%csrf_token%}-->
+<!--                 <div class="mb-3">-->
+<!--                     <input type="text" class="form-control" name="bk_name" placeholder="enter book name">-->
+<!--                 </div>-->
+<!--                 <div class="mb-3">-->
+<!--                    <input type="text" class="form-control" name="bk_author" placeholder="enter author name">-->
+<!--                </div>-->
+<!--                <div class="mb-3">-->
+<!--                    <input type="text" class="form-control" name="bk_price" placeholder="enter book price">-->
+<!--                </div>-->
+<!--                <div class="mb-3">-->
+<!--                    <input type="text" class="form-control" name="bk_copies" placeholder="enter no of copies">-->
+<!--                </div>-->
+<!--                <div class="mb-3">-->
+<!--                    <input type="submit" value="add">-->
+<!--                </div>-->
+<!--             </form>-->
+
+         </div>
+         <div class="col-2">  </div>
+
+     </div>
+{%endblock%}
